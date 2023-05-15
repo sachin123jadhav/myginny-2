@@ -93,12 +93,12 @@ Developer: Najmul Huda Eimon
     --yellow: #ffbc45;
     --gradient2: linear-gradient(to bottom,#ffbc45,#ff5959);
     --gradient2a: linear-gradient(to bottom,#ff5959, #ffbc45);
-    --blue: #173fb2;
+    --blue: #1D5C96;
     --dark-blue: #255dff;
     --light-blue: #1a96f6;
     --gradient3: linear-gradient(to bottom,#1a96f6,#196ada);
     --gradient3a: linear-gradient(to bottom,#196ada,#1a96f6);
-    --dark: #1c1c25;
+    --dark: #000;
     --grey: #888888;
     --white: #fff;
     --poppins: 'Poppins', sans-serif;;
@@ -235,7 +235,7 @@ h1 {
 }
 
 h2 {
-  font-size: 53px;
+  font-size: 38px;
   line-height: 64px;
 }
 
@@ -255,16 +255,18 @@ h5 {
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 21px;
   line-height: 28px;
 }
 p {
     font-size: 16px;
     line-height: 26px;
-    color: var(--grey);
+    color: var(--dark);
     font-family: "poppins", sans-serif;
     font-weight: 400;
 }
+
+h1,h2,h3,h4,h5,h6{ font-family: "poppins", sans-serif;}
 
 /* 1.4: padding margin */
 
@@ -608,14 +610,13 @@ p {
 }
 .section-title h3{
   font-family: var(--poppins);
-  color: var(--dark);
-  font-size: 38px;
-  font-weight: 700;
+  color: var(--blue); font-size: 20px;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
 .home2 .section-title h6{
-  background: var(--gradient3);
+  background: #1D5C96;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1012,8 +1013,8 @@ p {
 5.4: join
 ==================================================*/
 .home1.join{
-  padding-top: 75px;
-  padding-bottom: 85px;
+  padding-top: 50px;
+  padding-bottom:50px;
   background-attachment: fixed !important;
 }
 .home1.join h5{
@@ -1593,8 +1594,8 @@ p {
 }
 
 .footer .footer-bottom .copyright{
-  border-top: 1px solid rgba(255, 255, 255, 0.35);
-  padding: 25px 0;
+text-align: center;
+  padding: 10px 0;
 }
 
 .footer .footer-bottom p{
@@ -1702,12 +1703,14 @@ p {
 ==================================================*/
 .home2.feature .item{
   background: var(--white);
-  box-shadow: 2px 4px 90px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 15px #0000001A;
+  border-radius: 10px;
   padding: 40px;
   position: relative;
   overflow: hidden;
   z-index: 9;
 }
+.home2.feature .item:hover h6{color: var(--blue);}
 .home2.feature .item:before {
   position: absolute;
   content: '';
@@ -1736,7 +1739,7 @@ p {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: var(--gradient3);
+  background: #FCC71D;
   z-index: -1;
 }
 .home2.feature .item:after {
@@ -1767,7 +1770,7 @@ p {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: var(--gradient3);
+  background: #FCC71D;
   z-index: -1;
 }
 .home2.feature .item:hover:before {
